@@ -17,6 +17,13 @@ namespace MiAgencia
         Negro
     };
 
+    public enum Estatus
+    {
+        Existencia,
+        Vendido,
+        Entregado
+    };
+
     public class Vehiculo
     {
         #region Atributos
@@ -25,6 +32,7 @@ namespace MiAgencia
         string modelo;
         int anio;
         ColorVehiculo color;
+        Estatus estatus;
         #endregion
 
         #region Métodos
@@ -48,6 +56,7 @@ namespace MiAgencia
             anio = 2018;
             llantas = 4;
             color = ColorVehiculo.Ninguno;
+            estatus = Estatus.Existencia;
         }
     }
 }
