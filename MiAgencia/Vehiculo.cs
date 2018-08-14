@@ -40,5 +40,14 @@ namespace MiAgencia
             return "Vendido";
         }
         #endregion
+
+        public Vehiculo()
+        {
+            id = 0;
+            modelo = "";
+            anio = 2018;
+            llantas = 4;
+            color = ColorVehiculo.Ninguno;
+        }
     }
 }
