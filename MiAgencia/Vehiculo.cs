@@ -14,7 +14,7 @@ namespace MiAgencia
         Rojo,
         Vino,
         Azul,
-        Negro
+        Negro        
     };
 
     public enum Estatus
@@ -27,12 +27,12 @@ namespace MiAgencia
     public class Vehiculo
     {
         #region Atributos
-        int id;
-        int llantas;
-        string modelo;
-        int anio;
-        ColorVehiculo color;
-        Estatus estatus;
+        private int id;
+        private int llantas;
+        private string modelo;
+        private int anio;
+        private ColorVehiculo color;
+        private Estatus estatus;
         #endregion
 
         #region Métodos
@@ -58,5 +58,26 @@ namespace MiAgencia
             color = ColorVehiculo.Ninguno;
             estatus = Estatus.Existencia;
         }
+
+        public int Id
+        {
+            get
+            {
+                return id;
+            }
+            
+            set
+            {
+                id = value;
+            }
+        }
+
+        public string Modelo { get; set; }
+
+        public int Anio { get; set; }
+
+        public int Llantas { get; set; }
+
+        public ColorVehiculo Color { get; set; }
     }
 }

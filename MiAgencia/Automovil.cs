@@ -9,7 +9,7 @@ namespace MiAgencia
     class Automovil : Vehiculo
     {
         #region Atributos
-        int puertas;
+        private int puertas;
         #endregion
 
         public Automovil()
@@ -21,5 +21,7 @@ namespace MiAgencia
         {
             this.puertas = puertas;
         }
+
+        public int Puertas { get; set; }
     }
 }

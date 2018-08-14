@@ -9,7 +9,24 @@ namespace MiAgencia
     class Moto : Vehiculo
     {
         #region Atributos
-        bool casco;
+        private bool casco;
         #endregion
+
+        public Moto()
+        {
+            casco = false;
+        }
+
+        public Moto(bool casco)
+        {
+            this.casco = casco;
+        }
+
+        public Moto(int num)
+        {
+            casco = num == 1 ? true : false;
+        }
+
+        public bool Casco { get; set; }
     }
 }
