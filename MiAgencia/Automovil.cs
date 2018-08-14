@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MiAgencia
 {
-    class Automovil
+    class Automovil : Vehiculo
     {
     }
 }
