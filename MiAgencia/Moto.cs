@@ -8,5 +8,8 @@ namespace MiAgencia
 {
     class Moto : Vehiculo
     {
+        #region Atributos
+        bool casco;
+        #endregion
     }
 }

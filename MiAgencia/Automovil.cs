@@ -8,5 +8,8 @@ namespace MiAgencia
 {
     class Automovil : Vehiculo
     {
+        #region Atributos
+        int puertas;
+        #endregion
     }
 }
