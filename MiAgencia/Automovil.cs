@@ -11,5 +11,15 @@ namespace MiAgencia
         #region Atributos
         int puertas;
         #endregion
+
+        public Automovil()
+        {
+            puertas = 4;
+        }
+
+        public Automovil(int puertas)
+        {
+            this.puertas = puertas;
+        }
     }
 }
